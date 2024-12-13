@@ -86,14 +86,14 @@ const Truth = () => {
 ]
 
   return (
-    <div className='bg-[#1B0033] w-full min-h-screen px-5 py-24'>
+    <div className='bg-[#1B0033] w-full min-h-screen px-5 py-4'>
       
       
 
       <div className='w-full flex space-x-9 aside'>
      {
         tabs.map((tab, index) => (
-            <div onClick={() => handleIndex(index)} key={index} className={`${activeIndex === index ? 'text-white rounded-md  cursor-pointer' : 'text-gray-400'}  w-full text-white`}>
+            <div onClick={() => handleIndex(index)} key={index} className={`${activeIndex === index ? 'text-white rounded-md  cursor-pointer' : 'text-gray-400'}  w-full`}>
                 <p>{tab.id}</p>
             </div>
         ))
