@@ -36,7 +36,7 @@ const Navbar = () => {
             links.map((link, index) => {
               const isActive = location.pathname.startsWith(link.href)
               return (
-              <li key={index}><a href={link.href} className={`${isActive ? 'border-b border-b-white rounded-sm pb-1' : ''}`}>{link.link}</a></li>
+              <li key={index}><Link to={link.href} className={`${isActive ? 'border-b border-b-white rounded-sm pb-1' : ''}`}>{link.link}</Link></li>
             )})
           }
         </ul>
