@@ -12,7 +12,7 @@ const App = () => {
       <Navbar />
       <main className="min-h-screen">
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/truth" element={<Truth />} />
           <Route path="/dare" element={<Dare />} />
         </Routes>
