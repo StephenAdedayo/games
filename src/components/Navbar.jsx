@@ -1,7 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+
+  const links = [{
+    link : 'Home',
+    href : '/home'
+  },
+
+  {
+    link: 'Truth',
+    href : '/truth'
+  }, 
+  
+  {
+    link : 'Dare',
+    href : '/dare'
+  }]
+
+ const location = useLocation()
+
   return (
     <>
       <div className="flex  items-center w-full justify-between px-5 bg-[#1E235E] py-4">
@@ -13,16 +31,14 @@ const Navbar = () => {
           className="rounded-lg"
         />
 
-        <ul className="flex space-x-10 text-white">
-          <li>
-            <Link to="/">Home</Link>{" "}
-          </li>
-          <li>
-            <Link to="/truth">Truth</Link>{" "}
-          </li>
-          <li>
-            <Link to="/dare">Dare</Link>{" "}
-          </li>
+        <ul className="flex space-x-10">
+          {
+            links.map((link, index) => {
+              const isActive = location.pathname.startsWith(link.href)
+              return (
+              <li key={index}><a href={link.href} className={`${isActive ? 'border-b border-b-white rounded-sm pb-1' : ''}`}>{link.link}</a></li>
+            )})
+          }
         </ul>
       </div>
     </>

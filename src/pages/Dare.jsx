@@ -9,14 +9,10 @@ const Dare = () => {
   };
 
   const tabs = [
-
     {
-       id : 1,
-       question: "I dare you to pick any girl and fumble her boobies "
-
+      id: 1,
+      question: "I dare you to pick any girl and fumble her boobies ",
     },
-     
-
 
     {
       id: 11,
@@ -59,52 +55,50 @@ const Dare = () => {
     },
 
     {
-        id: 20,
-        question : " pick any boy and give him lap dance for 15secs"
-    },
-
-
-    {
-        id : 21,
-        question : "Pick any guy and exchange outfit with him"
-    },
-
-
-    {
-        id : 22,
-        question : "Pick any guy and tell him to put his face inside your top"
+      id: 20,
+      question: " pick any boy and give him lap dance for 15secs",
     },
 
     {
-        id : 23,
-        question : "Pick a guy/girl and kiss for 10 mins"
+      id: 21,
+      question: "Pick any guy and exchange outfit with him",
     },
 
     {
-        id : 24,
-        question :"Twerk to a music by ciara 'level up'" 
+      id: 22,
+      question: "Pick any guy and tell him to put his face inside your top",
     },
 
     {
-        id : 25,
-        question : "pick a guy/girl at random and give him or her a lap dance"
+      id: 23,
+      question: "Pick a guy/girl and kiss for 10 mins",
     },
 
     {
-        id : 26,
-        question  : "take 3 shots of alcohol non stop"
+      id: 24,
+      question: "Twerk to a music by ciara 'level up'",
     },
 
     {
-        id : 27,
-        question : "perform your sexual fantasy with a guy/girl here"
+      id: 25,
+      question: "pick a guy/girl at random and give him or her a lap dance",
     },
 
     {
-        id: 28,
-        question : ""
+      id: 26,
+      question: "take 3 shots of alcohol non stop",
     },
-   
+
+    {
+      id: 27,
+      question: "perform your sexual fantasy with a guy/girl here",
+    },
+
+    {
+      id: 28,
+      question: "",
+    },
+
     {
       id: 31,
       question: "What's the most romantic thing you've ever done for someone?",
